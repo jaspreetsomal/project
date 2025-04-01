@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hostel Navbar</title>
+    <link rel="stylesheet" href="style.css">
+    
+<body>
+    <nav class="navbar">
+        <div class="logo-container">
+            <img src="logo.png" alt="Hostel Logo" class="logo">
+            <span class="hostel-name">Hostel Name</span>
+        </div>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#rooms">Rooms & Pricing</a></li>
+            <li><a href="#booking">Booking</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+            <li><a href="#notice">Notice Board</a></li>
+            <li class="auth-buttons"><a href="login.html" class="login-btn">Login</a></li>
+            <li class="auth-buttons"><a href="registration.html" class="register-btn">Register</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+            &#9776;
+        </div>
+    </nav>
+
+
+<!-- Hero Section -->
+<section class="hero">
+    <div class="hero-text">
+        <h1>Welcome to Our Hostel</h1>
+        <p>Your Comfort, Our Priority!</p>
+        <a href="booking.html" class="btn">Book Now</a>
+    </div>
+</section>
+
+<!-- Hostel Selection Section -->
+<section class="hostel-selection">
+    <h2>Select Your Hostel</h2>
+    <div class="hostel-options">
+        <div class="hostel-box" onclick="showHostel('boys')">
+            <h3>🏠 Boys Hostel</h3>
+        </div>
+        <div class="hostel-box" onclick="showHostel('girls')">
+            <h3>🏠 Girls Hostel</h3>
+        </div>
+    </div>
+    <div id="hostel-info"></div>
+</section>
+
+    <!--home section-->
+    <section class="home">
+        <!-- Hostel Introduction -->
+        <div class="intro">
+            <h1>Welcome to </h1>
+            <p>Your home away from home. Our hostel offers a friendly atmosphere, comfortable rooms, and a variety of amenities to make your stay memorable.</p>
+        </div>
+    
+        <!-- Hostel Images/Slideshow -->
+        <div class="image-gallery">
+            <img src="hostal1.png" alt="Hostel Image 1">
+            <img src="hostal2.png" alt="Hostel Image 2">
+            <img src="hostal3.png" alt="Hostel Image 3">
+        </div>
+    
+        <!-- Quick Links -->
+        <div class="quick-links">
+            <a href="booking.html">Book Now</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+    
+       
+    
+        <!-- Boys' and Girls' Hostel Section -->
+        <div class="hostel-selection">
+            <table>
+                <tr>
+                    <td><button onclick="window.location.href='boys_hostel.html'">Boys' Hostel</button></td>
+                    <td><button onclick="window.location.href='girls_hostel.html'">Girls' Hostel</button></td>
+                </tr>
+            </table>
+        </div>
+    </section>
+    
+
+
+
+
+
+    <!--review section-->
+   <!-- Testimonials --
+   <div class="testimonials">
+    <h3>What Our Guests Say</h3>
+    <div class="testimonial">
+        <p>"Amazing experience! The rooms were cozy, and the staff was friendly!" - John D.</p>
+    </div>
+    <div class="testimonial">
+        <p>"Had a great stay. The facilities are top-notch, and it's a peaceful environment." - Sarah P.</p>
+    </div>
+</div>-->
+<script src="script.js"></script>
+    </body>
+</html>
